@@ -37,4 +37,8 @@ public class CalculatorSteps {
         calculator.subtract(arg1, arg2);
     }
 
+    @When("^I divide (\\d+) and (\\d+)$")
+    public void i_divide_and(int arg1, int arg2) throws Throwable {
+        calculator.divide(arg1, arg2);
+    }
 }
